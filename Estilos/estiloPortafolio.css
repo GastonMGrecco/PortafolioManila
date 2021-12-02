@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS Code Latin', sans-serif;
+}
+
+body{
+    background-image: url("../Recursos/matrix.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+ }
+header{
+    background-color:rgb(23, 26, 26);
+    box-shadow: 5px 2px 5px gray;
+    border: solid 1px gray;
+    position: sticky;
+    width:100%;
+    left: 0px;
+    top: 0px;
+}
+
+section{
+    
+    background-color: rgb(10, 67, 76);
+    position: fixed;
+    width: 50px;
+    height: 300px;
+    top: 35px;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    box-shadow: 5px 2px 5px whitesmoke;
+}
+footer{
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    border: solid 1px gray;
+    grid-column: 2/6;
+    background-color:rgb(23, 26, 26);
+    color: aliceblue;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+}
+
+h1{
+    color: aliceblue;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-top: 5px;
+    text-align: center;
+}
+h1:hover{
+    color:rgb(17, 255, 17);
+ }
+
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(17, 255, 17);
+    
+}
+#menu{
+    position:static;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid rgb(17, 255, 17);
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+article{
+    
+    grid-column: 2/6;
+    grid-row: span 3;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#frase{
+    color: aliceblue;
+    font-family:'Playfair Display', serif;
+    font-size: 35px;
+    text-align: center;
+    grid-column: span 5;
+    padding: 50px;
+    padding-left: 75px;
+    text-shadow: 5px 2px 5px rgb(10, 67, 76);
+    
+
+}
+img.redsocial{
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    border-radius: 50%;
+    
+}
+
+img.redsocial:hover{
+   background-color: greenyellow;
+   box-shadow: 5px 2px 5px whitesmoke; 
+}
+#insta{
+    border-radius: 0;
+}
+div{
+    display: grid;
+    grid-column: 2/6;
+    
+}
+img{
+    width: 125px;
+    height: 75px;
+}
+img:hover{
+    box-shadow: 5px 2px 5px whitesmoke;
+}
+
+#MenuP{
+    
+   
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content:stretch;
+    align-items: center;
+    bottom: 40px;
+    left:0;
+    background-color: rgb(23, 26, 26);
+    width: 100%;
+    height: 50px;
+
+}
+#yo{
+position: fixed;
+right:0;
+top: 35px;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+box-shadow: 5px 2px 5px whitesmoke;
+margin-right: 10px;
+}
+#yo:hover{
+    width: 75px;
+    height: 75px;
+}
+
+.portafolio{
+    border-radius: 5px;
+    box-shadow:5px 2px 5px whitesmoke;
+    margin-top: 10px;
+    
+}
+@media only screen and (min-width: 768px){
+
+
+
+}
