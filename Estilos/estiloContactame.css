@@ -9,6 +9,8 @@ body{
     background-image: url("../Recursos/matrix.jpg");
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
  }
 header{
@@ -16,7 +18,7 @@ header{
     box-shadow: 5px 2px 5px gray;
     border: solid 1px gray;
     position: sticky;
-    grid-column: span 5;
+    width: 100%;
     left: 0px;
     top: 0px;
 }
@@ -92,17 +94,35 @@ article{
     flex-direction: row;
     justify-content: center;
 }
-#frase{
-    color: aliceblue;
-    font-family:'Playfair Display', serif;
-    font-size: 35px;
-    text-align: center;
-    grid-column: span 5;
-    padding: 50px;
-    padding-left: 75px;
-    text-shadow: 5px 2px 5px rgb(10, 67, 76);
+form{
+    width: 200px;
+    height: 300px;
+    background-color: rgb(10, 67, 76);
+    margin-top: 75px;
+    margin-left: 25%;
+    margin-right: 10%;
+    border-radius: 5px;
+    box-shadow: 5px 2px 5px whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    padding: 5%;
     
 
+}
+textarea{
+    height: 75%;
+    width: 100%;
+    border-radius: 5px;
+}
+input{
+    border-radius: 5px;
+}
+#enviar{
+    border-radius: 5px;
+    background-color: rgb(23, 26, 26);
+    color: whitesmoke;
+    box-shadow: 5px 2px 5px whitesmoke;
 }
 img.redsocial{
     width: 30px;
