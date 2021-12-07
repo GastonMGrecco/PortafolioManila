@@ -35,7 +35,7 @@ nav{
     height: 50px;
     margin: 10px;
 }
-#carrito{
+#carrito1{
     width: 50px;
     height: 50px;
     margin-right: 10px;
@@ -131,14 +131,23 @@ h5{
     display: flex;
     flex-direction: column;
     justify-content:stretch;
-    width: 100%;
-    position: static;
+    width: 25%;
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    visibility:hidden;
 }
 .cardCarrito{
-background-color: aliceblue;
+background-color: rgb(204, 0, 255);
 display: flex;
 flex-direction: row;
 position: relative;
+justify-content: space-between;
+align-items: center;
+box-shadow: 5px 2px 5px gray;
+border-radius: 5px;
+margin: 2px;
+
 }
 h2{
     text-align: center;
@@ -156,4 +165,56 @@ article{
     position: static;
     display: flex;
     flex-direction: column;
+    
+    
+}
+#botoncarrito{
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color:rgba(240, 248, 255, 0);
+    border:0 ;
+}
+
+@media only screen and (min-width:1800px){
+    #logo{
+        width: 150px;
+        height: 120px;
+        margin: 10px;
+    }
+    #carrito{
+        width: 130px;
+        height: 110px;
+        margin-right: 10px;
+    }
+    #bolsa{
+        width: 140px;
+        height: 110px;
+        border-radius: 30%;
+        position: fixed;
+        top: 0;
+        left:40%;
+    
+    }
+    #contador{
+        background-color:rgba(0, 0, 139, 0.671);
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        border-radius: 50%;
+        position: absolute;
+        top: 15px;
+        right: 2px;
+        color: aliceblue;
+        font-size: 25px;
+    }
+    h5{
+        position: fixed;
+        top: 40px;
+        left: 50%;
+        font-size: 25px;
+    }
+
 }

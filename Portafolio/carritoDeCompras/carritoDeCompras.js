@@ -49,10 +49,12 @@ const listaProductos = [
   let span= document.querySelector("span");
   let section = document.querySelector("section");
   let carritoDeCompra = [];
-  let contador = document.getElementById("#contador");
+  let contador = document.getElementById("contador");
   let sumaTotal = document.querySelector("h5");
   let precio= document.querySelector("p");
   let articulo= document.querySelector("article");
+  let botoncarrito= document.getElementById("botoncarrito");
+  let carrito= document.getElementById("carrito");
   
   document.addEventListener("DOMContentLoaded", () =>{
       mostrarProductos();
@@ -75,28 +77,12 @@ const listaProductos = [
       section.innerHTML = fragmentoHTML
   }
   
-section.addEventListener( "click", event =>{
-      
-      if( event.target.id === "agregar" ){
-          contador++;
-          span.textContent=contador;    
-          
-          }
-          else if(event.target.id === "quitar" ){
-            contador--;
-            span.textContent= contador;
-          }  if (contador < 0) {
-                contador = 0;
-                span.textContent= contador;
-                }
-  
-                
-      })
+
   function agregarCarrito(producto) {
   
       carritoDeCompra.push( producto )
       console.log( carritoDeCompra )
-      contador.textContent = carritoDeCompra.length
+      
       calcularTotal()
   
   }
@@ -107,10 +93,7 @@ section.addEventListener( "click", event =>{
       sumaTotal.textContent = `Total: $ ${ total }`
     
     }
-    function quitarCarrito(producto){
-        
-        
-     };
+ 
     section.addEventListener( "click", event =>{
     
         if( event.target.id === "agregar" ){
@@ -128,12 +111,18 @@ section.addEventListener( "click", event =>{
             let pariente=event.target.parentElement;
             let etiqueta=pariente.querySelector("h3");
             let contenido=etiqueta.innerHTML;
-            for(let i=0;i<carritoDeCompra.length;i++){
-                if(carritoDeCompra[i].title==contenido){
-                    carritoDeCompra.splice(i,1);
-                }
+
+            let palabra=carritoDeCompra.find(element=>{return element.title===contenido});
+            console.log(palabra);
+            let indice=carritoDeCompra.indexOf(palabra)
+            console.log(indice)
+            if(indice!=-1){
+              carritoDeCompra.splice(indice,1);
+            } 
+                   
                 
-            }
+                
+            
             console.log(carritoDeCompra);
             calcularTotal(); 
             
@@ -148,10 +137,59 @@ section.addEventListener( "click", event =>{
             fragmentoHTML += `
                 <div class="cardCarrito">
                     <h3>${ productoCar.title }</h3>
-                    <p>${ productoCar.price }</p>
                     <button id="quitar2">Quitar</button>
                 </div>`
                })
         articulo.innerHTML = fragmentoHTML;
     }
-  
+
+
+    section.addEventListener( "click", event =>{
+      
+      if( event.target.id === "agregar" ){
+         
+          contador.textContent=carritoDeCompra.length;    
+          
+          }
+          else if(event.target.id === "quitar" ){
+           
+            contador.textContent= carritoDeCompra.length;
+          
+          }      
+      });
+
+   let contadorclick=0;
+  botoncarrito.addEventListener("click",(evento)=>{
+    contadorclick++;
+    
+    if(contadorclick%2!==0){
+      carrito.setAttribute("style", "visibility:visible;");
+    }
+    else{
+      carrito.setAttribute("style", "visibility:hidden;");
+    }
+   
+    console.log(contadorclick);
+  })
+
+  carrito.addEventListener("click",(evento)=>{
+    if(evento.target.id === "quitar2"){
+
+      let pariente=evento.target.parentElement;
+      let etiqueta=pariente.querySelector("h3");
+      let contenido=etiqueta.innerHTML;
+
+      let palabra=carritoDeCompra.find(element=>{return element.title===contenido});
+      console.log(palabra);
+      let indice=carritoDeCompra.indexOf(palabra)
+      console.log(indice)
+              carritoDeCompra.splice(indice,1);
+          
+                
+              contador.textContent=carritoDeCompra.length;
+            console.log(carritoDeCompra);
+            calcularTotal(); 
+            
+        }
+        mostrarCarrito();
+    });
