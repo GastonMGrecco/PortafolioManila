@@ -36,7 +36,9 @@ section{
     box-shadow: 5px 2px 5px whitesmoke;
 }
 footer{
-    font-size: 15px;
+    width:100%;
+    height:25px;
+    font-size: 12px;
     font-family: 'Courier New', Courier, monospace;
     border: solid 1px gray;
     grid-column: 2/6;
@@ -45,6 +47,9 @@ footer{
     position: fixed;
     bottom: 0px;
     text-align: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 h1{
@@ -100,7 +105,7 @@ article{
     grid-column: span 5;
     padding: 50px;
     padding-left: 75px;
-    text-shadow: 5px 2px 5px rgb(10, 67, 76);
+    text-shadow: 5px 5px 5px rgb(10, 67, 76);
     
 
 }
@@ -140,7 +145,7 @@ img:hover{
     flex-direction: row;
     justify-content:stretch;
     align-items: center;
-    bottom: 40px;
+    bottom: 25px;
     left:0;
     background-color: rgb(23, 26, 26);
     width: 100%;
@@ -161,8 +166,27 @@ margin-right: 10px;
     width: 75px;
     height: 75px;
 }
+
+@media only screen and (min-width: 420px){
+
+#frase{
+    font-size: 50px;
+    padding: 100px;
+    padding-left: 75px;
+    text-shadow: 5px 5px 5px rgb(10, 67, 76);
+}
+
+}
+
+
 @media only screen and (min-width: 768px){
 
-
+    #frase{
+        font-size: 70px;
+        padding: 75px;
+        padding-left: 80px;
+        text-shadow: 10px 5px 5px rgb(10, 67, 76);
+    }
+    
 
 }

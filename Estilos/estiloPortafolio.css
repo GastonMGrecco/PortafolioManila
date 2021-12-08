@@ -38,15 +38,19 @@ section{
     box-shadow: 5px 2px 5px whitesmoke;
 }
 footer{
-    font-size: 15px;
+    font-size: 12px;
     font-family: 'Courier New', Courier, monospace;
     border: solid 1px gray;
     grid-column: 2/6;
     background-color:rgb(23, 26, 26);
     color: aliceblue;
-    position: fixed;
+    position:sticky;
     bottom: 0px;
     text-align: center;
+    width: 100%;
+    height: 20px;
+    margin-top:50px ;
+    
 }
 
 h1{
@@ -66,6 +70,7 @@ a{
 }
 a:hover{
     color: rgb(17, 255, 17);
+    font-size: 30px;
     
 }
 #menu{
@@ -112,11 +117,15 @@ img.redsocial{
     background-color: green;
     border-radius: 50%;
     
+
+    
 }
 
 img.redsocial:hover{
    background-color: greenyellow;
-   box-shadow: 5px 2px 5px whitesmoke; 
+   box-shadow: 5px 2px 5px whitesmoke;
+   width: 75px;
+    height: 75px;  
 }
 #insta{
     border-radius: 0;
@@ -142,7 +151,7 @@ img:hover{
     flex-direction: row;
     justify-content:stretch;
     align-items: center;
-    bottom: 40px;
+    bottom: 20px;
     left:0;
     background-color: rgb(23, 26, 26);
     width: 100%;
@@ -165,10 +174,29 @@ margin-right: 10px;
 }
 
 .portafolio{
-    border-radius: 5px;
+    border:solid 5px rgba(10, 67, 76, 0.534);
+    border-radius: 10px;
     box-shadow:5px 2px 5px whitesmoke;
     margin-top: 10px;
-    
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 200px;
+    height: 125px;
+}
+.portafolio:hover{
+    box-shadow:10px 5px 10px whitesmoke;
+}
+#contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+
+}
+@media only screen and (min-width: 420px){
+
+
+
 }
 @media only screen and (min-width: 768px){
 
