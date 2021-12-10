@@ -58,9 +58,12 @@ h1{
     padding-left: 10px;
     padding-top: 5px;
     text-align: center;
+    
 }
+
 h1:hover{
     color:rgb(17, 255, 17);
+    font-size: 20px;
  }
 
 a{
@@ -69,7 +72,7 @@ a{
 }
 a:hover{
     color: rgb(17, 255, 17);
-    
+    font-size: 30px;
 }
 #menu{
     position:static;
@@ -119,7 +122,9 @@ img.redsocial{
 
 img.redsocial:hover{
    background-color: greenyellow;
-   box-shadow: 5px 2px 5px whitesmoke; 
+   box-shadow: 5px 2px 5px whitesmoke;
+   width: 75px;
+   height: 75px;   
 }
 #insta{
     border-radius: 0;
@@ -167,10 +172,43 @@ margin-right: 10px;
     height: 75px;
 }
 
+@keyframes moveAround {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  /* animacion tp*/
+  #TP {
+      position: fixed;
+      top: 60%;
+      left: 40%;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: rgba(240, 248, 255, 0);
+      animation: moveAround 2s infinite linear;
+    } 
+  
+    #sol{
+        width: 30px;
+        height:30px;
+    }
+    #tierraPlana{
+        position: fixed;
+        border-radius: 50%;
+        top: 55%;
+        left:35%;
+        width: 140px;
+        height:140px;
+    }
+
 @media only screen and (min-width: 420px){
 
 #frase{
-    font-size: 50px;
+    font-size: 35px;
     padding: 100px;
     padding-left: 75px;
     text-shadow: 5px 5px 5px rgb(10, 67, 76);
@@ -182,11 +220,127 @@ margin-right: 10px;
 @media only screen and (min-width: 768px){
 
     #frase{
-        font-size: 70px;
+        font-size: 50px;
         padding: 75px;
         padding-left: 80px;
         text-shadow: 10px 5px 5px rgb(10, 67, 76);
     }
+    /* animacion tp*/
+  #TP {
+    position: fixed;
+    top: 55%;
+    left: 40%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(240, 248, 255, 0);
+    animation: moveAround 2s infinite linear;
+  } 
+
+  #sol{
+      width: 50px;
+      height:50px;
+  }
+  #tierraPlana{
+      position: fixed;
+      border-radius: 50%;
+      top: 45%;
+      left:35%;
+      width: 200px;
+      height:200px;
+  }
     
 
+}
+@media only screen and (min-width: 1000px){
+
+    #frase{
+        width: 500px;
+        font-size: 55px;
+        padding: 75px;
+        padding-left: 200px;
+        padding-right: 0;
+        text-shadow: 10px 5px 5px rgb(10, 67, 76);
+    }
+    /* animacion tp*/
+  #TP {
+    position: fixed;
+    top: 25%;
+    left: 65%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgba(240, 248, 255, 0);
+    animation: moveAround 2s infinite linear;
+  } 
+
+  #sol{
+      width: 70px;
+      height:70px;
+  }
+  #tierraPlana{
+      position: fixed;
+      border-radius: 50%;
+      top: 15%;
+      left:60%;
+      width: 300px;
+      height:300px;
+  }
+    
+
+}
+@media only screen and (max-height: 350px){
+    #frase{
+        width: 300px;
+        color: aliceblue;
+        font-family:'Playfair Display', serif;
+        font-size: 25px;
+        text-align: center;
+        grid-column: span 5;
+        padding: 50px;
+        padding-top: 80px;
+        padding-left: 20px;
+        text-shadow: 5px 5px 5px rgb(10, 67, 76);
+        
+    
+    }
+
+    #TP {
+        position: fixed;
+        top: 25%;
+        left: 65%;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: rgba(240, 248, 255, 0);
+        animation: moveAround 2s infinite linear;
+      } 
+    
+      #sol{
+          width: 30px;
+          height:30px;
+      }
+      #tierraPlana{
+          position: fixed;
+          border-radius: 50%;
+          top: 20%;
+          left:60%;
+          width: 140px;
+          height:140px;
+      }
+  
+      section{
+    
+        background-color: rgb(10, 67, 76);
+        position: fixed;
+        width: 300px;
+        height: 50px;
+        top: 35px;
+        left:0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-around;
+        box-shadow: 5px 2px 5px whitesmoke;
+    }
 }

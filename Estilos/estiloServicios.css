@@ -36,7 +36,7 @@ section{
     box-shadow: 5px 2px 5px whitesmoke;
 }
 footer{
-    font-size: 15px;
+    font-size: 12px;
     font-family: 'Courier New', Courier, monospace;
     border: solid 1px gray;
     grid-column: 2/6;
@@ -45,6 +45,8 @@ footer{
     position: fixed;
     bottom: 0px;
     text-align: center;
+    width: 100%;
+    height:20px
 }
 
 h1{
@@ -140,7 +142,7 @@ img:hover{
     flex-direction: row;
     justify-content:stretch;
     align-items: center;
-    bottom: 40px;
+    bottom: 20px;
     left:0;
     background-color: rgb(23, 26, 26);
     width: 100%;
