@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: url("../Recursos/matrix.jpg");
+    background-image: url("../Recursos/matrix.gif");
     display: flex;
     flex-direction: column;
     position: relative;
@@ -191,11 +191,42 @@ margin-right: 10px;
       background-color: rgba(240, 248, 255, 0);
       animation: moveAround 2s infinite linear;
     } 
+    #TPL{
+        position: fixed;
+      top: 60%;
+      left: 40%;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: rgba(240, 248, 255, 0);
+      animation: moveAround 3s infinite linear;
+
+    }
   
     #sol{
         width: 30px;
         height:30px;
+        border-radius: 50%;
+        box-shadow: 5px 20px 5px white;
     }
+    #luna{
+        width: 25px;
+        height:25px; 
+        
+    
+    }
+    #estrellas{
+      position: fixed;
+      top: 55%;
+      left: 35%;
+      width: 135px;
+      height: 135px;
+      border-radius: 50%;
+      animation: moveAround 10s infinite linear;
+      z-index: 1;
+      opacity: 50%;
+    }
+  
     #tierraPlana{
         position: fixed;
         border-radius: 50%;
