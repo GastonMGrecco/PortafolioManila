@@ -127,7 +127,8 @@ img.redsocial:hover{
    height: 75px;   
 }
 #insta{
-    border-radius: 0;
+    border-radius: 10px;
+
 }
 div{
     display: grid;
@@ -181,10 +182,20 @@ margin-right: 10px;
     }
   }
   /* animacion tp*/
+  #ModeloTP{
+      width: 175px;
+      height: 175px;
+      background-color: rgba(10, 67, 76, 0.555);
+      position:fixed;
+      top: 50%;
+      left: 30%;
+      border-radius: 50%;
+      box-shadow: none;
+  }
   #TP {
-      position: fixed;
-      top: 60%;
-      left: 40%;
+      position:absolute;
+      top:calc(50%-100px);
+      left:calc(50%-100px);
       width: 100px;
       height: 100px;
       border-radius: 50%;
@@ -192,9 +203,9 @@ margin-right: 10px;
       animation: moveAround 2s infinite linear;
     } 
     #TPL{
-        position: fixed;
-      top: 60%;
-      left: 40%;
+      position: absolute;
+      top: calc(50%-100px);
+      left:calc(50%-100px);
       width: 100px;
       height: 100px;
       border-radius: 50%;
@@ -207,18 +218,16 @@ margin-right: 10px;
         width: 30px;
         height:30px;
         border-radius: 50%;
-        box-shadow: 5px 20px 5px white;
+        box-shadow: 20px 10px 20px 20px  white, inset 10px 10px 20px 20px rgba(251, 255, 0, 0.651);
     }
     #luna{
         width: 25px;
         height:25px; 
-        
-    
     }
     #estrellas{
-      position: fixed;
-      top: 55%;
-      left: 35%;
+      position: absolute;
+      top: calc(50%-135px);
+      left: calc(50%-135px);
       width: 135px;
       height: 135px;
       border-radius: 50%;
@@ -228,15 +237,16 @@ margin-right: 10px;
     }
   
     #tierraPlana{
-        position: fixed;
+        position: absolute;
         border-radius: 50%;
-        top: 55%;
-        left:35%;
+        top:calc(50%-140px);
+        left:calc(50%-140px);
         width: 140px;
         height:140px;
     }
 
 @media only screen and (min-width: 420px){
+    
 
 #frase{
     font-size: 35px;
@@ -249,6 +259,69 @@ margin-right: 10px;
 
 
 @media only screen and (min-width: 768px){
+/* animacion tp*/
+#ModeloTP{
+    width: 250px;
+    height: 250px;
+    background-color: rgba(10, 67, 76, 0.555);
+    position:fixed;
+    top:40%;
+    left: 40%;
+    border-radius: 50%;
+    box-shadow: none;
+}
+#TP {
+    position:absolute;
+    top: calc(50%-130px);
+    left:calc(50%-130px);
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: rgba(240, 248, 255, 0);
+    animation: moveAround 2s infinite linear;
+  } 
+  #TPL{
+    position: absolute;
+    top: calc(50%-130px);
+    left:calc(50%-130px);
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: rgba(240, 248, 255, 0);
+    animation: moveAround 3s infinite linear;
+
+  }
+
+  #sol{
+      width: 45px;
+      height:45px;
+      border-radius: 50%;
+      box-shadow: 20px 10px 20px 20px  white, inset 10px 10px 20px 20px rgba(251, 255, 0, 0.651);
+  }
+  #luna{
+      width: 35px;
+      height:35px; 
+  }
+  #estrellas{
+    position: absolute;
+    top: calc(50%-135px);
+    left: calc(50%-135px);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: moveAround 10s infinite linear;
+    z-index: 1;
+    opacity: 50%;
+  }
+
+  #tierraPlana{
+      position: absolute;
+      border-radius: 50%;
+      top:calc(50%-140px);
+      left:calc(50%-140px);
+      width: 200px;
+      height:200px;
+  }
 
     #frase{
         font-size: 50px;
@@ -256,30 +329,6 @@ margin-right: 10px;
         padding-left: 80px;
         text-shadow: 10px 5px 5px rgb(10, 67, 76);
     }
-    /* animacion tp*/
-  #TP {
-    position: fixed;
-    top: 55%;
-    left: 40%;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: rgba(240, 248, 255, 0);
-    animation: moveAround 2s infinite linear;
-  } 
-
-  #sol{
-      width: 50px;
-      height:50px;
-  }
-  #tierraPlana{
-      position: fixed;
-      border-radius: 50%;
-      top: 45%;
-      left:35%;
-      width: 200px;
-      height:200px;
-  }
     
 
 }
@@ -290,33 +339,80 @@ margin-right: 10px;
         font-size: 55px;
         padding: 75px;
         padding-left: 200px;
+        margin-left: 100px;
         padding-right: 0;
         text-shadow: 10px 5px 5px rgb(10, 67, 76);
     }
-    /* animacion tp*/
-  #TP {
-    position: fixed;
-    top: 25%;
-    left: 65%;
+  /* animacion tp*/
+#ModeloTP{
+    width: 350px;
+    height: 350px;
+    background-color: rgba(10, 67, 76, 0.555);
+    position:fixed;
+    top:10%;
+    left: 55%;
+    border-radius: 50%;
+    box-shadow: none;
+}
+#TP {
+    position:absolute;
+    top: calc(50%-130px);
+    left:calc(50%-130px);
     width: 200px;
     height: 200px;
     border-radius: 50%;
     background-color: rgba(240, 248, 255, 0);
     animation: moveAround 2s infinite linear;
   } 
+  #TPL{
+    position: absolute;
+    top: calc(50%-130px);
+    left:calc(50%-130px);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgba(240, 248, 255, 0);
+    animation: moveAround 3s infinite linear;
+
+  }
 
   #sol{
       width: 70px;
       height:70px;
-  }
-  #tierraPlana{
-      position: fixed;
       border-radius: 50%;
-      top: 15%;
-      left:60%;
+      box-shadow: 20px 10px 20px 20px  white, inset 10px 10px 20px 20px rgba(251, 255, 0, 0.651);
+  }
+  #luna{
+      width: 50px;
+      height:50px; 
+  }
+  #estrellas{
+    position: absolute;
+    top: calc(50%-135px);
+    left: calc(50%-135px);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    animation: moveAround 10s infinite linear;
+    z-index: 1;
+    opacity: 50%;
+  }
+
+  #tierraPlana{
+      position: absolute;
+      border-radius: 50%;
+      top:calc(50%-140px);
+      left:calc(50%-140px);
       width: 300px;
       height:300px;
   }
+
+    #frase{
+        font-size: 50px;
+        padding: 75px;
+        padding-left: 80px;
+        text-shadow: 10px 5px 5px rgb(10, 67, 76);
+    }
     
 
 }
@@ -335,30 +431,69 @@ margin-right: 10px;
         
     
     }
+/* animacion tp*/
+#ModeloTP{
+    width: 175px;
+    height: 175px;
+    background-color: rgba(10, 67, 76, 0.555);
+    position:fixed;
+    top: 22%;
+    left:55%;
+    border-radius: 50%;
+    box-shadow: none;
+}
+#TP {
+    position:absolute;
+    top:calc(50%-100px);
+    left:calc(50%-100px);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(240, 248, 255, 0);
+    animation: moveAround 2s infinite linear;
+  } 
+  #TPL{
+    position: absolute;
+    top: calc(50%-100px);
+    left:calc(50%-100px);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(240, 248, 255, 0);
+    animation: moveAround 3s infinite linear;
 
-    #TP {
-        position: fixed;
-        top: 25%;
-        left: 65%;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        background-color: rgba(240, 248, 255, 0);
-        animation: moveAround 2s infinite linear;
-      } 
-    
-      #sol{
-          width: 30px;
-          height:30px;
-      }
-      #tierraPlana{
-          position: fixed;
-          border-radius: 50%;
-          top: 20%;
-          left:60%;
-          width: 140px;
-          height:140px;
-      }
+  }
+
+  #sol{
+      width: 30px;
+      height:30px;
+      border-radius: 50%;
+      box-shadow: 20px 10px 20px 20px  white, inset 10px 10px 20px 20px rgba(251, 255, 0, 0.651);
+  }
+  #luna{
+      width: 25px;
+      height:25px; 
+  }
+  #estrellas{
+    position: absolute;
+    top: calc(50%-135px);
+    left: calc(50%-135px);
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    animation: moveAround 10s infinite linear;
+    z-index: 1;
+    opacity: 50%;
+  }
+
+  #tierraPlana{
+      position: absolute;
+      border-radius: 50%;
+      top:calc(50%-140px);
+      left:calc(50%-140px);
+      width: 140px;
+      height:140px;
+  }
   
       section{
     
