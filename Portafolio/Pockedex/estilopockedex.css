@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./forest.jpg");
+}
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(252, 227, 4);
+    text-shadow: 5px 5px 5px whitesmoke;
+    -webkit-text-stroke: 0.5px rgb(39, 25, 247);
+    margin-bottom: 100px;
+    margin-top: 5px;
+    font-size: 20px;
+}
+#pockedex{
+box-shadow: 5px 5px 5px 5px gray;
+border-radius: 10px;
+width: 200px;
+height:350px;
+display: flex;
+flex-direction: column;
+justify-content:space-around;
+align-items: center;
+background-color: whitesmoke;
+}
+img{
+    width: 175px;
+    height:175px;
+    border: solid 1px gray;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px 2px grey;
+}
+
+#texto{
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px grey;
+}
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+button{
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px gray;
+    background-color: rgb(195, 20, 20);
+    color: antiquewhite;
+}

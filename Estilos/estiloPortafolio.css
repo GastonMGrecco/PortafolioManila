@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: url("../Recursos/matrix.jpg");
+    background-image: url("../Recursos/matrix.gif");
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,7 +44,7 @@ footer{
     grid-column: 2/6;
     background-color:rgb(23, 26, 26);
     color: aliceblue;
-    position:sticky;
+    position:fixed;
     bottom: 0px;
     text-align: center;
     width: 100%;
@@ -128,7 +128,7 @@ img.redsocial:hover{
     height: 75px;  
 }
 #insta{
-    border-radius: 0;
+    border-radius: 10px;
 }
 div{
     display: grid;

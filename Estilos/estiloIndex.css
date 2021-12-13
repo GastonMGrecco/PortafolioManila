@@ -416,6 +416,7 @@ margin-right: 10px;
     
 
 }
+
 @media only screen and (max-height: 350px){
     #frase{
         width: 300px;
@@ -437,7 +438,7 @@ margin-right: 10px;
     height: 175px;
     background-color: rgba(10, 67, 76, 0.555);
     position:fixed;
-    top: 22%;
+    top:10%;
     left:55%;
     border-radius: 50%;
     box-shadow: none;
