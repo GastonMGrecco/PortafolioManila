@@ -1,8 +1,17 @@
+
+@font-face {
+    font-family: 'matrix_Mym';
+    src: url('../Recursos/matrix-4.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'M PLUS Code Latin', sans-serif;
+    font-family:"matrix_Mym";
 }
 
 body{
@@ -102,7 +111,7 @@ article{
 }
 #frase{
     color: aliceblue;
-    font-family:'Playfair Display', serif;
+    font-family:"matrix_Mym";
     font-size: 35px;
     text-align: center;
     grid-column: span 5;
@@ -171,6 +180,67 @@ margin-right: 10px;
 #yo:hover{
     width: 75px;
     height: 75px;
+}
+
+#burbuja{
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    top: 10%;
+    left: 75%;
+    z-index: 1;
+    visibility:hidden;
+}
+#bur1{
+width: 20px;
+height: 15px;
+border-radius: 50%;
+background-color: aliceblue;
+position: absolute;
+right: 0;
+top: 10px;
+box-shadow: 5px 5px 5px 5px rgba(10, 67, 76, 0.555),
+inset 5px 5px 5px 5px rgba(10, 67, 76, 0.555);
+}
+#bur2{
+    width: 30px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    box-shadow: 5px 5px 5px 5px rgba(10, 67, 76, 0.555),
+    inset 5px 5px 5px 5px rgba(10, 67, 76, 0.555);
+}
+#bur3{
+    width: 50px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    box-shadow: 5px 5px 5px 5px rgba(10, 67, 76, 0.555),
+    inset 5px 5px 5px 5px rgba(10, 67, 76, 0.555);
+}
+#bur4{
+    width: 400px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    box-shadow: 5px 5px 5px 5px rgba(10, 67, 76, 0.555),
+    inset 5px 5px 5px 5px rgba(10, 67, 76, 0.555);
+}
+p{
+    text-align: center;
 }
 
 @keyframes moveAround {
