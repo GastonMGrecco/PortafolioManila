@@ -491,7 +491,6 @@ p{
     #frase{
         width: 300px;
         color: aliceblue;
-        font-family:'Playfair Display', serif;
         font-size: 25px;
         text-align: center;
         grid-column: span 5;
