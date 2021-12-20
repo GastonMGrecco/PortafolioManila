@@ -1,0 +1,62 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#fondo{
+  height: 100vh;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#tarjeta{
+  width:400px;
+  height:200px;
+  box-shadow: 0px 0px 5px 5px gray;
+  border-radius: 10px;
+  background-color: aliceblue;
+  position: relative;
+}
+h2{
+  position: absolute;
+  left:50px;
+  right: 25px;
+  top:5px;
+}
+p{
+  position: absolute;
+  right:100px;
+  bottom:10px;
+}
+#boton{
+  width: 50px;
+  height: 50px;
+  box-shadow: 2px 5px 3px gray;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin:10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+i{
+ font-size: 40px;
+ margin-left: 5px;
+}
+button i{
+  color:aliceblue;
+}
+/*
+#bombilla{
+  width:200px;
+  height:200px;
+  border:solid 2px black;
+  border-radius:50%;
+  background-color: gray;
+  margin-top:20px;
+  margin-bottom:50px;
+}*/
