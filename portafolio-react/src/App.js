@@ -5,9 +5,8 @@ import Quotebox from './Componentes/Quotebox'
 
 function App() {
   return (
-          <div id="principal" >
-           <Quotebox/>
-            
+          <div className="principal" >
+           <Quotebox/> 
           </div>
 
   );

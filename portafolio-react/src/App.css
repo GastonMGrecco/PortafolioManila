@@ -3,14 +3,14 @@
   margin: 0;
   box-sizing: border-box;
 }
-#fondo{
+.fondo{
   height: 100vh;
   background-color: blue;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#tarjeta{
+.tarjeta{
   width:400px;
   height:200px;
   box-shadow: 0px 0px 5px 5px gray;
@@ -29,7 +29,7 @@ p{
   right:100px;
   bottom:10px;
 }
-#boton{
+.boton{
   width: 50px;
   height: 50px;
   box-shadow: 2px 5px 3px gray;
@@ -50,13 +50,3 @@ i{
 button i{
   color:aliceblue;
 }
-/*
-#bombilla{
-  width:200px;
-  height:200px;
-  border:solid 2px black;
-  border-radius:50%;
-  background-color: gray;
-  margin-top:20px;
-  margin-bottom:50px;
-}*/

@@ -1,6 +1,8 @@
 import React from 'react';
 import quotes from '../quotes.json'
-import { useState } from 'react';
+import {useState} from 'react';
+
+
 
 const Quotebox = () => {
     const colorArreglo =[
@@ -14,9 +16,12 @@ const Quotebox = () => {
         "#FF8066",
         "#4FFBDF"
     ]
-const [frase,setFrase]=useState(quotes[0].quote);
+    let indiceColor1=Math.floor(Math.random()*colorArreglo.length)
+
+
+const [frase,setFrase]=useState(quotes[0].quote)
 const [autor,setAutor]=useState(quotes[0].author);
-const [color,setColor]=useState(colorArreglo[0]);
+const [color,setColor]=useState(colorArreglo[indiceColor1])
 
 
 const cambiarEstado=()=>{
@@ -30,12 +35,12 @@ const cambiarEstado=()=>{
 
 
     return (
-        <div id="fondo" style={{backgroundColor:color}}>
-            <div id="tarjeta">
-                <i class="fas fa-quote-left" style={{color:color}}></i>
+        <div className='fondo' style={{backgroundColor:color}}>
+            <div className='tarjeta'>
+                <i className='fas fa-quote-left' style={{color:color}}></i>
                 <h2 style={{color:color}}>{frase}</h2>
                 <p style={{color:color}}>{autor}</p>
-                <button id="boton"onClick={cambiarEstado}style={{backgroundColor:color}}> <i class="fas fa-greater-than"></i></button>
+                <button className='boton'onClick={cambiarEstado}style={{backgroundColor:color}}> <i className="fas fa-greater-than"></i></button>
             </div>
         </div>
     );
